@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>New Product</h1>
+    <form action="/doInsert" method="post">
+        Name: <input class="form-control" type="text" name="txtName" id="">
+        <br>
+        Price: <input class="form-control" type="text" name="txtPrice" id="">
+        <br>
+        Orign: <input class="form-control" type="text" name="txtOrigin" id="">
+        <br>
+        <input type="submit" value="Create">
+    </form>
+    {{> footer}}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Register</h1>
+    </div>
+    <form action="/doRegister" method="post">
+        Name <input  class="form-control" id="exampleFormControlInput1" placeholder="User Name" type="text" name="txtName" id="" required>
+        <br>
+        {{error.name}}
+        PassWord <input  class="form-control" id="exampleFormControlInput1" placeholder="Password" type="password" name="txtPass" id="" required>
+        <br>
+        {{error.password}}
+        <input type="submit" value="Register">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Update product</h1>
+    <form action="/doUpdate" method="post">
+        Name <input class="form-control" type="text" name="txtNames" id="" value="{{{ProductDB.name}}}">
+        <br>
+        Price <input class="form-control" type="text" name="txtPrices" id="" value="{{{ProductDB.price}}}">
+        <br>
+        Origin <input class="form-control" type="text" name="txtOrigin" id="" value="{{{ProductDB.origin}}}">
+        <br>
+        <input type="submit" value="Update">
+        <input type="hidden" name="id" value="{{{ProductDB._id}}}">
+    </form>
+</body>
+</html>
